@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.matrix-container .info {
+.matrix-container .matrix-container__link {
   font-family: fantasy, cursive;
 }
 
@@ -34,34 +34,34 @@
   margin: 0 auto 0;
 }
 
-.task {
+.add-elemen__input-section--input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.add-item {
+.add-elemen__title {
   color: #333;
   border-bottom: none;
   padding: 0;
   margin: 0;
 }
 
-.task-row-wrapper {
+.add-elemen__input-section {
   display: flex;
 }
 
-ul {
+.incomplete-tasks__list,
+.completed-tasks__list {
   margin: 0;
   padding: 0px;
 }
 
-li,
-h3 {
+.incomplete-tasks__list-item {
   list-style: none;
 }
 
-input,
+.incomplete-tasks__input,
 button {
   outline: none;
 }
@@ -92,7 +92,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-  input[type="text"] {
+.text-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -105,7 +105,7 @@ label[for="new-task"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.text-input:focus {
   color: #333;
 }
 
@@ -120,7 +120,8 @@ label[for="new-task"] {
 }
 
 /* Task list */
-li {
+.incomplete-tasks__list-item,
+.completed-tasks__list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -130,32 +131,37 @@ li {
   align-items: center;
 }
 
-li > * {
+.incomplete-tasks__list-item > *,
+.completed-tasks__list-item > * {
   vertical-align: middle;
+  margin-right: 20px;
 }
 
-li > input[type="checkbox"] {
+.incomplete-tasks__list-item--input {
   margin: 0 10px;
 }
 
-li > label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
+  flex-grow: 1;
 }
 
-li > input[type="text"] {
+.text-input {
   width: 226px;
 }
 
-.delete img {
+.incomplete-tasks__delete-button img,
+.completed-tasks__delete-button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.incomplete-tasks__delete-button img:hover,
+.completed-tasks__delete-button img:hover {
   transform: rotateZ(0);
 }
 
@@ -166,15 +172,16 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li .text-input {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.edit-mode .text-input {
   display: inline-block;
   width: 224px;
+  flex-grow: 1;
 }
 
-.edit-mode label {
+.edit-mode .label {
   display: none;
 }
