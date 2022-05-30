@@ -85,7 +85,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+  input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -154,12 +154,12 @@ li > input[type="text"] {
 
 /* Completed */
 #completed-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-input[type=text] {
+ul li input[type=text] {
   display: none;
 }
 
