@@ -3,20 +3,24 @@
   <head>
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" MEDIA="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" MEDIA="screen">
   </head>
   <body class="body">
     <header class="matrix-container">
-      <img src="./eisenhower-matrix.jpg">
-      <a class="info" href="https://goal-life.com/page/method/matrix-eisenhower">
-        Want more details?
-      </a>
+      <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+      <nav>
+        <a class="info" href="https://goal-life.com/page/method/matrix-eisenhower">
+          Want more details?
+        </a>
+      </nav>
     </header>
     <div class="worker-panel">
       <section id="add-item-element">
-        <label for="new-task">
-          Add Item
-        </label>
+        <h3 class="add-item">
+          <label for="new-task">
+            Add Item
+          </label>
+        </h3>
         <div class="task-row-wrapper">
           <input id="new-task" class="task" type="text">
           <button class="button">
@@ -39,7 +43,7 @@
               Edit
             </button>
             <button class="delete">
-              <img src="./remove.svg">
+              <img src="./remove.svg" alt="remove-icon">
             </button>
           </li>
           <li class="edit-mode">
@@ -52,7 +56,7 @@
               Save
             </button>
             <button class="delete">
-              <img src="./remove.svg">
+              <img src="./remove.svg" alt="remove-icon">
             </button>
           </li>
         </ul>
@@ -72,7 +76,7 @@
               Edit
             </button>
             <button class="delete">
-              <img src="./remove.svg">
+              <img src="./remove.svg" alt="remove-icon">
             </button>
           </li>
         </ul>
