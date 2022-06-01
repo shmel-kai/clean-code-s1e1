@@ -154,7 +154,7 @@
 }
 
 .incomplete-tasks__delete-button .image,
-.completed-tasks__delete-button .image{
+.completed-tasks__delete-button .image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
@@ -173,7 +173,7 @@
 
 /* Edit Task */
 .incomplete-tasks__input,
-.completed-tasks__input{
+.completed-tasks__input {
   display: none;
 }
 
